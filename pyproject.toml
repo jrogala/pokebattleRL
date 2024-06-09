@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pokebattlerl"
+version = "0.1.0"
+description = ""
+authors = ["Jimmy Rogala <jimmy.rogala@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "pokebattlerl" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nodejs-bin = "^18.4.0a4"
+poke-env = "^0.8.1"
+requests = "^2.32.3"
+faust-streaming = "^0.11.0"
+aiokafka = "^0.10.0"
+pytest-asyncio = "^0.23.7"
+confluent-kafka = "^2.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+invoke = "^2.2.0"
+docker = "^7.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
