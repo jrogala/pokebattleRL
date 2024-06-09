@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pokemon_showdown:
+    build: ./server
+    ports:
+      - "8000:8000"
+    networks:
+      - pokemon_showdown_network
+networks:
+  pokemon_showdown_network:
+    driver: bridge

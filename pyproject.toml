@@ -1,0 +1,15 @@
+[project]
+name = "pokebattlerl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "docker>=7.1.0",
+    "invoke>=2.2.0",
+    "pytest-asyncio>=0.25.3",
+    "ruff>=0.9.4",
+]
+
+[tool.uv.workspace]
+members = ["bot"]
